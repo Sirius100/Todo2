@@ -1,0 +1,29 @@
+.WrapperTask
+  display: flex
+  justify-content: center
+  width: 70vw
+  min-height: inherit
+  max-height: inherit
+  text-align: center
+  z-index: 10
+  margin: 0 auto
+  transition-duration: 2s
+
+.WrapperTask_Light
+  background-color: white
+.WrapperTask_Dark
+  background-color: #464451
+
+  //меняю позицию контейнера при вызове панели навигации
+.WrapperTask_Menu_Call
+  position: absolute
+  right: 100px
+  width: 70vw
+  min-height: inherit
+  text-align: center
+  z-index: 10
+  transition-duration: 2s
+
+@media (max-width: 500px)
+  .WrapperTask
+    width: 95vw

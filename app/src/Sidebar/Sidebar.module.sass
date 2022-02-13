@@ -1,0 +1,61 @@
+.Sidebar
+  position: absolute
+  left: -300px
+  width: 300px
+  height: inherit
+  border: 1px solid white
+  box-shadow: 2px -1px 2px rgba(0, 0, 255, .2)
+  transition: all .9s
+  padding-left: 5px
+  padding-right: 5px
+  border-left: none
+  margin-top: 2px
+  z-index: 1000
+
+.Sidebar_Light
+  background-color: white
+  color: balck
+.Sidebar_Dark
+  background-color: #464451
+  color: white
+
+code
+  position: absolute
+  bottom: 10px
+  a
+    display: inline-block
+    width: 100%
+    height: 30px
+    color: #98FF98
+    text-align: center
+    line-height: 30px
+    border-radius: 10px
+    background-color: #4C2F27
+    border: 1px black solid
+    text-decoration: none
+    a:hover
+      box-shadow: 2px -1px 2px rgba(0, 0, 255, .2)
+
+
+@keyframes menuShow
+  0%
+    opacity: 0
+    transform: translateX(300px)
+
+  100%
+    opacity: 1
+
+@keyframes menuClose
+  0%
+    opacity: 1
+    transform: translateX(-300px)
+  100%
+    opacity: 0
+
+.Sidebar.entering
+  animation: menuShow 2.5s ease-in-out
+.Sidebar.entered
+
+.Sidebar.exiting
+  animation: menuClose 2.5s ease-in-out
+.Sidebar.exited
